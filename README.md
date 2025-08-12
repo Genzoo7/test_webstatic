@@ -1,27 +1,3 @@
-static-website/
-│
-├── backend.tf                   # Remote backend
-├── providers.tf                 # AzureRM provider + versions
-├── variables.tf                 # Shared vars
-├── terraform.tfvars             # Non-sensitive overrides
-├── main.tf                      # Root module orchestration
-├── outputs.tf                   # Root outputs
-├── README.md
-│
-└── modules/
-    ├── storage-static-website/
-    │   ├── main.tf
-    │   ├── variables.tf
-    │   ├── outputs.tf
-    │   └── versions.tf
-    │
-    ├── cdn/
-    │   ├── main.tf
-    │   ├── variables.tf
-    │   ├── outputs.tf
-    │   └── versions.tf
-
-
 # Static Website on Azure via Terraform
 
 ## Structure
