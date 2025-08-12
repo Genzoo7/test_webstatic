@@ -1,0 +1,30 @@
+# -----------------------------------
+# Terraform
+# -----------------------------------
+
+# Pliki stanu (mogą zawierać hasła, klucze, ID zasobów)
+*.tfstate
+*.tfstate.*
+
+# Folder lokalnego cache providera
+.terraform/
+
+# Plik z planem Terraform (może zawierać wrażliwe wartości)
+*.tfplan
+
+# Automatyczne i lokalne pliki z wartościami zmiennych
+*.tfvars
+*.tfvars.json
+terraform.tfvars
+terraform.tfvars.json
+
+# Lokalne ustawienia CLI Terraform
+.terraformrc
+terraform.rc
+
+# Pliki logów z debugowania
+crash.log
+*.log
+
+# Foldery robocze / testowe
+.terraform.lock.hcl
