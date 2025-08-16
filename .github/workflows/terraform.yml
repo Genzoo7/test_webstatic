@@ -10,6 +10,9 @@ jobs:
     name: Terraform Plan
     runs-on: ubuntu-latest
     environment: production
+    env:
+      TF_VAR_RESOURCE_GROUP_NAME: ${{ secrets.AZURE_RESOURCE_GROUP }}
+      TF_VAR_STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
 
     steps:
       - name: Checkout repo
