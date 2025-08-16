@@ -13,9 +13,9 @@
 *.tfplan
 
 # Automatyczne i lokalne pliki z wartościami zmiennych
-*.tfvars
+#*.tfvars
 *.tfvars.json
-terraform.tfvars
+#terraform.tfvars
 terraform.tfvars.json
 
 # Lokalne ustawienia CLI Terraform
