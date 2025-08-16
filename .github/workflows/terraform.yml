@@ -45,7 +45,10 @@ jobs:
     name: Terraform Apply
     needs: terraform-plan
     runs-on: ubuntu-latest
-    environment: production  # <- tutaj dev będzie musiał ręcznie zatwierdzić job
+    environment: production
+    env:
+      TF_VAR_RESOURCE_GROUP_NAME: ${{ secrets.AZURE_RESOURCE_GROUP }}
+      TF_VAR_STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
 
     steps:
       - name: Checkout repo
