@@ -23,9 +23,9 @@ variable "index_html_content" {
 
 # define in env 
 variable "resource_group_name" {
-  type    = string
+  type = string
 }
 # define in env 
 variable "storage_account_name" {
-  type    = string
+  type = string
 }
