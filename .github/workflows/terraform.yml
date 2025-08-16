@@ -1,4 +1,4 @@
-name: Run Azure Login With a Service Principal Secret # test
+name: Run Azure Login With a Service Principal Secret # wating for lock :d
 on: [push]
 
 permissions:
